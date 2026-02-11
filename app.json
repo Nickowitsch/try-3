@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Just Do It Man...",
+    "slug": "daily-tasks-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/Just_do_it_man_log_copy.png",
+    "scheme": "dailytasks",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/Just_do_it_man_log_copy.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#e8c170"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dailytasks.app",
+      "infoPlist": {
+        "UIBackgroundModes": ["fetch", "remote-notification"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/Just_do_it_man_log_copy.png",
+        "backgroundColor": "#e8c170"
+      },
+      "package": "com.dailytasks.app",
+      "permissions": [
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.SCHEDULE_EXACT_ALARM"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/Just_do_it_man_logo_smal.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/Just_do_it_man_log_copy.png",
+          "color": "#e8c170"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
